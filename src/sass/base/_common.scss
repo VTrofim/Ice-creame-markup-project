@@ -1,0 +1,14 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body{
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    color: getColor('main-text');
+    background-color: getColor('main-bgc');
+}
+
+a{
+    color: currentColor;
+}

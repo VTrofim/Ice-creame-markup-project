@@ -1,0 +1,15 @@
+$colors: (
+    'main-text': #FCFCFC,
+    'secondary-text': #131313,
+    'accent': #F8D24E,
+    'main-bgc': #84A178,
+    'card-bgc': #fff,
+    'modal-option': #9CBE8F,
+    'ice-creame': #AEC6A5,
+    'ice-coffee': #EFD478,
+    'milkshake': #D6936D,
+);
+
+@function getColor($key){
+    @return map-get($colors, $key)
+}
