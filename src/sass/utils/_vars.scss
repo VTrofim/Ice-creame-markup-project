@@ -8,6 +8,8 @@ $colors: (
     'ice-creame': #AEC6A5,
     'ice-coffee': #EFD478,
     'milkshake': #D6936D,
+    'btn-hover':#0a8817,
+    'btn-disabled':#ABABAB,
 );
 
 @function getColor($key){
