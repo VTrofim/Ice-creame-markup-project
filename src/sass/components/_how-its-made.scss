@@ -1,0 +1,18 @@
+.howmade__title{
+    text-align: center;
+    @include text(30px,800,1.2px,null);
+    text-transform: uppercase;
+}
+
+.howmade-title__span{
+    font-family: Seymour One;
+    font-size: 36px;
+    letter-spacing: 2.16px;
+    text-transform: uppercase;
+}
+
+.howmade-photo-container{
+    width: 200px;
+    height: 200px;
+    background: url('../images/cow-desc_1x-min.png');
+}

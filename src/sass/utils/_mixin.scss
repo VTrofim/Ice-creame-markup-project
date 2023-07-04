@@ -1,0 +1,14 @@
+@mixin text($size, $weight, $spacing, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    line-height: $height;
+}
+
+;
+
+@mixin flex($dis,$jc,$ai) {
+    display: $dis;
+    justify-content: $jc;
+    align-items: $ai;
+};

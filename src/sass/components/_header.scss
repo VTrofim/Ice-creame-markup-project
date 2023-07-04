@@ -1,0 +1,27 @@
+.header-wrapper{
+    @include flex(flex,space-between,center);
+    padding: 10px 0;
+}
+
+.logo__item{
+    width: 60px;
+    height: 65px;
+    fill: getColor('accent');
+}
+
+.nav-list{
+    @include flex(flex,null,center);
+}
+
+.nav__item{
+    @include text(null,700,null,null);
+    transition: color 250ms linear;
+    &:hover,&:focus{
+        color:getColor('accent');
+    }
+}
+
+.nav__item:not(:first-child){
+    margin-left: 27px;
+    color: red;
+}
