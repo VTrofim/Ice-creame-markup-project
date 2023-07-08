@@ -3,9 +3,7 @@
     font-weight: $weight;
     letter-spacing: $spacing;
     line-height: $height;
-}
-
-;
+};
 
 @mixin flex($dis,$jc,$ai) {
     display: $dis;
