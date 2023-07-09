@@ -157,6 +157,59 @@ button {
   border: none;
 }
 
+.button-secondary, .button-primary {
+  height: 42px;
+  padding: 12px 34px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  outline: none;
+  background-color: #F8D24E;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+.button-secondary:hover, .button-primary:hover, .button-secondary:focus, .button-primary:focus {
+  background-color: #0a8817;
+}
+.button-secondary:focus, .button-primary:focus {
+  color: #fff;
+}
+[disabled].button-secondary, [disabled].button-primary {
+  background-color: #ABABAB;
+}
+
+.button-secondary {
+  border: 2px solid #F8D24E;
+  background: transparent;
+}
+.button-secondary:hover, .button-secondary:focus {
+  background-color: transparent;
+  border-color: #0a8817;
+}
+.button-secondary:focus {
+  background-color: transparent;
+  color: #fff;
+}
+.button-secondary[disabled] {
+  background-color: transparent;
+  border-color: #ABABAB;
+}
+
+.button--no-border {
+  font-size: 14px;
+  font-weight: 600;
+  background: transparent;
+  outline: none;
+}
+.button--no-border:hover, .button--no-border:focus {
+  color: #0a8817;
+}
+.button--no-border:focus {
+  color: #fff;
+}
+.button--no-border[disabled] {
+  color: #ABABAB;
+}
+
 body {
   font-family: Montserrat;
   font-weight: 400;
@@ -175,6 +228,12 @@ body {
 
 a {
   color: currentColor;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .comments-section {
