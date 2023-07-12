@@ -1,0 +1,15 @@
+.products-modal-container{
+    width: 568px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.products-modal-form__btn{
+    @extend .button-primary;
+}
+.products-modal__title{
+    color: getColor('secondary-text');
+    text-align: center;
+    font-family: Seymour One;
+    @include text(20px,null,null,1.4);
+}

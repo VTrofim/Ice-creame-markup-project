@@ -1,67 +1,76 @@
-<div class="products-modal-container hidden">
-    <button type="button"></button>
-    <h4>Chololate icecream</h4>
-    <div></div>
-    <ul>
-        <li>
-            <div>
-                <span>320</span>
-                <span>kcal</span>
-            </div>
-        </li>
-        <li>
-            <div>
-                <span>4g</span>
-                <span>Protein...</span>
-            </div>
-        </li>
-        <li>
-            <div>
-                <span>8,2g</span>
-                <span>Fats</span>
-            </div>
-        </li>
-        <li>
-            <div>
-                <span>40,4g</span>
-                <span>Carbs</span>
-            </div>
-        </li>
-    </ul>
-
-    <div>
-        <h5>Ingredients</h5>
-        <ul>
-            <li>
-                <span>Milk</span>
-                <span>100ml</span>
+<div class="products-modal-backdrop modal-back hidden" data-modal>
+    <div class="products-modal-container modal-wrapper">
+        <button class="modal-close" type="button" data-modal-close>
+            <svg class="arrow-logo" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+            </svg>
+        </button>
+        <h4 class="products-modal__title">Chololate icecream</h4>
+        <div class="products-modal__image">
+            <div class="products-modal__image-item"></div>
+            <div class="products-modal__image-back"></div>
+        </div>
+        <ul class="products-modal__calories-list">
+            <li class="products-modal__calories-list-item">
+                <div class="calories-container">
+                    <span class="calories-count">320</span>
+                    <span class="calories-description">kcal</span>
+                </div>
             </li>
-            <li>
-                <span>Belgian chocolate</span>
-                <span>20g</span>
+            <li class="products-modal__calories-list-item">
+                <div class="calories-container">
+                    <span class="calories-count">4g</span>
+                    <span class="calories-description">Protein</span>
+                </div>
             </li>
-            <li>
-                <span>Cream</span>
-                <span>150 ml</span>
+            <li class="products-modal__calories-list-item">
+                <div class="calories-container">
+                    <span class="calories-count">8,2g</span>
+                    <span class="calories-description">Fats</span>
+                </div>
             </li>
-            <li>
-                <span>Cocoa powder</span>
-                <span>30g</span>
-            </li>
-            <li>
-                <span>Sugar</span>
-                <span>40g</span>
-            </li>
-            <li>
-                <span>Vanilla sugar</span>
-                <span>10g</span>
+            <li class="products-modal__calories-list-item">
+                <div class="calories-container">
+                    <span class="calories-count">40,4g</span>
+                    <span class="calories-description">Carbs</span>
+                </div>
             </li>
         </ul>
+
+        <div class="products-modal-body">
+            <h5 class="products-modal-body__title">Ingredients</h5>
+            <ul class="products-modal-body__list">
+                <li class="products-modal-body__item">
+                    <span class="products-modal-body__item-name">Milk</span>
+                    <span class="products-modal-body__item-mesure"</span>
+                </li>
+                <li class="products-modal-body__item">
+                    <span class="products-modal-body__item-name">Belgian chocolate</span>
+                    <span class="products-modal-body__item-mesure">20g</span>
+                </li>
+                <li>
+                    <span class="products-modal-body__item-name">Cream</span>
+                    <span class="products-modal-body__item-mesure">150 ml</span>
+                </li>
+                <li class="products-modal-body__item">
+                    <span class="products-modal-body__item-name">Cocoa powder</span>
+                    <span class="products-modal-body__item-mesure">30g</span>
+                </li>
+                <li class="products-modal-body__item">
+                    <span class="products-modal-body__item-name">Sugar</span>
+                    <span class="products-modal-body__item-mesure">40g</span>
+                </li>
+                <li class="products-modal-body__item">
+                    <span class="products-modal-body__item-name">Vanilla sugar</span>
+                    <span class="products-modal-body__item-mesure">10g</span>
+                </li>
+            </ul>
+        </div>
+        <form class="products-modal-form">
+            <input class="products-modal-form__field" type="text" placeholder="Name">
+            <input class="products-modal-form__field" type="text" placeholder="Phone">
+            <textarea class="products-modal-form__field" name="" id="" placeholder="Comment"></textarea>
+            <button class="products-modal-form__btn" type="submit">Submit</button>
+        </form>
     </div>
-    <form>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Phone">
-        <textarea name="" id="" placeholder="Comment"></textarea>
-        <button type="submit">Submit</button>
-    </form>
 </div>

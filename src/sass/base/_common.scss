@@ -23,3 +23,33 @@ a{
     pointer-events: none;
     visibility: hidden;
 }
+.modal-back{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective:400px;
+    overflow-y:scroll ;
+    background-color: getColor('modal-back');
+    z-index: 10;
+}
+.modal-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 2px solid getColor('accent');
+    border-radius: 10px;
+    background-color: getColor('main-text');
+    z-index: 10;
+}
+.modal-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}

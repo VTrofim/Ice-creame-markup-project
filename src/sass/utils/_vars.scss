@@ -10,6 +10,7 @@ $colors: (
     'milkshake': #D6936D,
     'btn-hover':#0a8817,
     'btn-disabled':#ABABAB,
+    'modal-back':rgba(0,0,0,0.5)
 );
 
 @function getColor($key){

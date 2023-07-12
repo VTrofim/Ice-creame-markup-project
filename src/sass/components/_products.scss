@@ -11,8 +11,8 @@
 .section-products{
     padding-top: 60px;
     padding-bottom: 66px;
-    background: url('../images/products-back-desc_1x-min.png') no-repeat center center;
-    background-size: cover;
+    background: url('../images/products-back-desc_1x-min.png')  1200 1050;
+    // background-size: cover;
     background-color: #fff;
 }
 .products__title-count {
@@ -29,24 +29,92 @@
 .products-list{
     @include flex(flex,null,center)
 }
-
+.products-list__link{
+    position: relative;
+}
+.ice-cream-card__img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:-60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    background: url('../images/products-ice1-desc_1x-min.png') no-repeat center center;
+    background-size: 300px 300px;
+    z-index: 2;
+}
 .products-list__item{
     width: 370px;
-    height: 575px;
+    height: 536px;
     @extend %product-card;
-     
+    transition: box-shadow 250ms linear, transform 250ms linear;
+    &:hover,&:focus{
+        transform: scale(1.1);
+        box-shadow: 0px 8px 30px 0px rgba(29, 28, 27, 0.25);
+    }
     &:not(:first-child)
     {
         margin-left: 32px;
     }
+    &:first-child{
+        background-color: getColor('ice-creame');
+        & .ice-cream-card__img {
+            background-image: url('../images/products-ice1-desc_1x-min.png');
+        }
+         & .ice-cream-card__img--back {
+            background-color: getColor('ice-creame');
+            box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+        }
+    }
+    &:last-child{
+        background-color: getColor('milkshake');
+        & .ice-cream-card__img {
+            background-image: url('../images/products-ice3-desc_1x-min.png');
+        }
+         & .ice-cream-card__img--back {
+            background-color: getColor('milkshake');
+            box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &:nth-child(2){
+        background-color: getColor('ice-coffee');
+        & .ice-cream-card__img {
+            background-image: url('../images/products-ice2-desc_1x-min.png');
+        }
+        & .ice-cream-card__img--back {
+            background-color: getColor('ice-coffee');
+            box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+        }
+    }
+}
+.ice-cream-card__img--back{
+    content: '';
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: -55%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    // background: linear-gradient(0deg, rgba(248, 210, 78, 0.70) 0%, rgba(248, 210, 78, 0.70) 100%), #D9D9D9;
+    z-index: 1;
+
 }
 .ice-cream-card__title{
     margin-bottom: 65px;
     @extend %title;
     @include text(30px, 700, 1.2px, normal);
 }
+.ice-cream-card__body{
+    @include flex(flex, null, center);
+    flex-direction: column;
+}
 .ice-cream-card__text{
     margin-bottom: 65px;
     @include text(null, null, 0.64px, 1.76);
     color: getColor('secondary-text');
+}
+.ice-cream-card__btn{
+    background: transparent;
+    cursor: pointer;
 }
