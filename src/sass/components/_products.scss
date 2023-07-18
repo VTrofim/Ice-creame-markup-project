@@ -11,9 +11,10 @@
 .section-products{
     padding-top: 60px;
     padding-bottom: 66px;
-    background: url('../images/products-back-desc_1x-min.png')  1200 1050;
-    // background-size: cover;
+    background: url('../images/products-back-desc_1x-min.png');
+    background-size: 1200px 1050px;
     background-color: #fff;
+    margin: 0 auto
 }
 .products__title-count {
     @extend %title;
@@ -27,7 +28,7 @@
     margin-bottom: 303px;
 }
 .products-list{
-    @include flex(flex,null,center)
+    @include flex(flex,null,center);
 }
 .products-list__link{
     position: relative;
@@ -49,7 +50,7 @@
     @extend %product-card;
     transition: box-shadow 250ms linear, transform 250ms linear;
     &:hover,&:focus{
-        transform: scale(1.1);
+        transform: scale(1.05);
         box-shadow: 0px 8px 30px 0px rgba(29, 28, 27, 0.25);
     }
     &:not(:first-child)

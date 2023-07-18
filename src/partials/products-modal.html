@@ -1,6 +1,6 @@
-<div class="products-modal-backdrop modal-back hidden" data-modal>
+<div class="products-modal-backdrop modal-back hidden" id="modal-back">
     <div class="products-modal-container modal-wrapper">
-        <button class="modal-close" type="button" data-modal-close>
+        <button class="modal-close" type="button" >
             <svg class="arrow-logo" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-close-btn"></use>
             </svg>
@@ -42,13 +42,13 @@
             <ul class="products-modal-body__list">
                 <li class="products-modal-body__item">
                     <span class="products-modal-body__item-name">Milk</span>
-                    <span class="products-modal-body__item-mesure"</span>
+                    <span class="products-modal-body__item-mesure">100ml</span>
                 </li>
                 <li class="products-modal-body__item">
                     <span class="products-modal-body__item-name">Belgian chocolate</span>
                     <span class="products-modal-body__item-mesure">20g</span>
                 </li>
-                <li>
+                <li class="products-modal-body__item"> 
                     <span class="products-modal-body__item-name">Cream</span>
                     <span class="products-modal-body__item-mesure">150 ml</span>
                 </li>
@@ -69,7 +69,7 @@
         <form class="products-modal-form">
             <input class="products-modal-form__field" type="text" placeholder="Name">
             <input class="products-modal-form__field" type="text" placeholder="Phone">
-            <textarea class="products-modal-form__field" name="" id="" placeholder="Comment"></textarea>
+            <textarea class="products-modal-form__field" rows="3" name="" id="" placeholder="Comment"></textarea>
             <button class="products-modal-form__btn" type="submit">Submit</button>
         </form>
     </div>

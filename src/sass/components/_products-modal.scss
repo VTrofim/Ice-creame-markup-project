@@ -8,8 +8,112 @@
     @extend .button-primary;
 }
 .products-modal__title{
+    margin-bottom: 17px;
     color: getColor('secondary-text');
     text-align: center;
     font-family: Seymour One;
     @include text(20px,null,null,1.4);
+}
+.products-modal__image{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    z-index: 1;
+    margin-bottom: 28px;
+}
+.products-modal__image-item{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: url('../images/modal-ice_1x-min.jpg');
+    z-index: 2;
+}
+.products-modal__image-back{
+    position: absolute;
+    top: 7px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: getColor('ice-creame');
+    box-shadow: 0px 6px 20px 0px rgba(10, 136, 23, 0.25);
+    z-index: -1;
+}
+
+.products-modal__calories-list{
+    @include flex(flex, center, center);
+}
+.products-modal__calories-list-item{
+    width: 65px;
+    height: 90px;
+    border: 2px solid getColor('modal-option');
+    border-radius: 40px;
+    color: getColor('secondary-text');
+    &:not(:first-child){
+        margin-left: 20px;
+    }
+}
+.calories-container{
+    @include flex(flex, null, center);
+    flex-direction: column;
+}
+.calories-count{
+    @include flex(flex, center, center);
+    width: 53px;
+    height: 53px;
+    padding: 12px;
+    margin-bottom: 7px;
+    border-radius: 50%;
+    @include text(12px, 500, null, 2.33px);
+    background-color: getColor('modal-option');
+    box-shadow: 0px 6px 20px 0px rgba(10, 136, 23, 0.25);
+}
+.calories-description{
+    @include text(12px, null, normal, normal);
+}
+.products-modal-body{
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+.products-modal-body__title{
+    margin-bottom: 24px;
+    @include text(20px, 500, null, 1.4);
+    text-align: center;
+    color: getColor('secondary-text');
+}
+.products-modal-body__list{
+    @include flex(flex, start, center);
+    flex-direction: column;
+    color: getColor('secondary-text');
+}
+.products-modal-body__item{
+    width: 100%;
+    @include flex(flex, space-between, center);
+    @include text(14px, null, 0.56px, 1.76);
+    &:not(:last-child){
+        margin-bottom: 11px;
+    }
+}
+.products-modal-form{
+    @include flex(flex, start, center);
+    flex-direction: column;
+}
+.products-modal-form__field{
+    width: 368px;
+    padding: 11px 0 11px 16px;
+    border-radius: 10px;
+    border: 1px solid getColor('main-bgc');
+    background: rgba(248, 210, 78, 0.10);
+    outline: none;
+    @include text(14px, null, null, 1.4);
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    &:nth-child(3) {
+        margin-bottom: 32px;
+        resize:none
+    }
+    &::placeholder{
+        color: getColor('secondary-text');
+    }
 }

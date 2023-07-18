@@ -1,5 +1,44 @@
 .comments-section{
-    padding-top: 123px;
+    padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url("./../images/comment-section-back-desc_1x-min.png"),linear-gradient(to right, #f5f5f5, #f5f5f5);
+    background-image: url("./../images/comment-section-back-desc_1x-min.png"),linear-gradient(to right, #fff, #fff);
+}
+.comments-section__decription{
+    width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 39px 109px 47px 109px;
+    border-radius: 24px;
+    background: #84A178;
+    margin-bottom: 32px;
+    @include text(16px, 500, 0.64px, 1.86);
+    text-align: center;
+}
+.comments-section__picture{
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.comments-section__location{
+    margin-bottom: 42px;
+    text-align: center;
+    @include text(16px, 500, 0.64px, 1.86);
+    color: getColor('secondary-text');
+}
+
+.swiper-pagination{
+    bottom: 0px!important;
+    @include flex(flex,center,center);
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+
+}
+.swiper-pagination-bullet-active{
+background-color: getColor('main-bgc') !important;
 }

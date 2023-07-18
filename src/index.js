@@ -1,3 +1,4 @@
 import './sass/index.scss';
 import './js/slider';
-import './js/modals';
+import './js/general-modal';
+// import './js/modals';
