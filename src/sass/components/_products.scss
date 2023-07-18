@@ -30,14 +30,12 @@
 .products-list{
     @include flex(flex,null,center);
 }
-.products-list__link{
-    position: relative;
-}
+
 .ice-cream-card__img{
     width: 300px;
     height: 300px;
     position: absolute;
-    top:-60%;
+    top:0%;
     left: 50%;
     transform: translate(-50%,-60%);
     background: url('../images/products-ice1-desc_1x-min.png') no-repeat center center;
@@ -47,6 +45,7 @@
 .products-list__item{
     width: 370px;
     height: 536px;
+    position: relative;
     @extend %product-card;
     transition: box-shadow 250ms linear, transform 250ms linear;
     &:hover,&:focus{
@@ -94,7 +93,7 @@
     height: 300px;
     border-radius: 50%;
     position: absolute;
-    top: -55%;
+    top: 3%;
     left: 50%;
     transform: translate(-50%, -60%);
     // background: linear-gradient(0deg, rgba(248, 210, 78, 0.70) 0%, rgba(248, 210, 78, 0.70) 100%), #D9D9D9;

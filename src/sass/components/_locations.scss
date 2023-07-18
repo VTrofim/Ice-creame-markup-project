@@ -1,0 +1,100 @@
+.section-location{
+    // padding-top: 52px;
+    padding-bottom: 120px;
+    // & .container{
+    //     position: relative;
+    // }
+    // background-color: getColor('main-bgc');
+}
+.location-list{
+    position: relative;
+    height: 442px;
+    @include flex(flex,center,center);
+    margin-bottom: 64px;
+}
+.location-list__item{
+    position: absolute;
+    top: -96px;
+    left: 0;
+    width: 368px;
+    height: 538px;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+    background-color: getColor('card-bgc');
+    transition: transform 250ms linear;
+
+    &:hover,&:focus{
+        transform: scale(1.02);
+        box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.10);
+        
+    }
+    &:nth-child(2){
+        left: 400px;
+    }
+    &:last-child{
+        left: 800px;
+    }
+}
+.location-list__item-title{
+    display: inline-block;
+    padding: 0px 12px;
+    margin-bottom: 32px;
+    border-radius: 6px;
+    @include text(null,500,0.64px,1.86);
+    background-color: getColor('accent');
+    color:getColor('secondary-text');
+}
+.location-list__item-address{
+    max-height: 120px;
+}
+.location-info-block{
+    &:not(:last-child){
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+}
+.location-city,
+.location-days,
+.location-hours {
+    @include text(null, 500, 0.64px, 1.86);
+    color: getColor('secondary-text');
+}
+.location-city{
+    margin-bottom: 8px;
+}
+.location-point, .location-list__item-contacts{
+    @include text(null, 500, 0.64px, 1.83);
+    color: getColor('milkshake');
+}
+.location-point{
+    &:hover,&:focus{
+        text-decoration: underline;
+    }
+}
+.location-list__item-contacts{
+    color: getColor('secondary-text');
+}
+
+.location-shedule-container:first-child{
+    margin-bottom: 12px;
+}
+.location-hours {
+    color: getColor('btn-disabled');
+}
+.location-phone, .location-mail{
+    transition: color 250ms linear;
+}
+.location-phone:hover,.location-phone:focus,
+.location-mail:hover,.location-mail:focus{
+    color: getColor('milkshake');
+}
+
+.location-btns{
+    @include flex(flex, center, center);
+
+    & .button-secondary{
+        margin-left: 16px;
+    }
+}
