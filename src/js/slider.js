@@ -14,3 +14,14 @@ const swiper = new Swiper('.swiper', {
       clickable:true,
     },
 });
+
+const swiperPoster = new Swiper('.swiper-poster', {
+    // configure Swiper to use modules
+    modules: [Pagination],
+      // Optional parameters
+    direction: 'horizontal',
+  autoplay: {
+      delay:500,
+    },
+    loop: true,
+});
