@@ -1,5 +1,5 @@
   // import Swiper JS
-import Swiper, { Pagination } from 'swiper';
+import Swiper, {Autoplay, Pagination } from 'swiper';
 
   // init Swiper:
 const swiper = new Swiper('.swiper', {
@@ -17,11 +17,12 @@ const swiper = new Swiper('.swiper', {
 
 const swiperPoster = new Swiper('.swiper-poster', {
     // configure Swiper to use modules
-    modules: [Pagination],
       // Optional parameters
-    direction: 'horizontal',
-  autoplay: {
-      delay:500,
-    },
+    // direction: 'horizontal',
+  modules: [Autoplay],
+      // autoplay: {
+      //   delay: 10000,
+      //   disableOnInteraction: false,
+      // },
     loop: true,
 });

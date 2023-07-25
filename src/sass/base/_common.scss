@@ -53,3 +53,20 @@ a{
     width: 20px;
     height: 20px;
 }
+
+::-webkit-scrollbar {
+    background-color: #D4D4D4;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #D4D4D4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #BFBFBF;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
