@@ -108,14 +108,17 @@
 .ice-cream-card__body{
     @include flex(flex, null, center);
     flex-direction: column;
+    height: 100%;
 }
 .ice-cream-card__text{
-    margin-bottom: 65px;
+    // margin-bottom: 65px;
     @include text(null, null, 0.64px, 1.76);
     color: getColor('secondary-text');
 }
 
 .ice-cream-card__btn{
+    display: block;
+    margin-top: auto;
     background: transparent;
     cursor: pointer;
 }
