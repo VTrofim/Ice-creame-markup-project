@@ -16,6 +16,7 @@
         refs.modal.classList.toggle('hidden');
     }
 })();
+
 // function toggleModal(event, modalId) {
 //     // modalId = 'products-modal';
 //     event.preventDefault();

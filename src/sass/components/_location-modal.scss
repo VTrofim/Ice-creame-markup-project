@@ -1,0 +1,20 @@
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+.location-map-container{
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+.location-map-container__item{
+    border-radius: 10px;
+}
+.location-btn{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    color: #000;
+}

@@ -97,6 +97,10 @@
 .products-modal-form{
     @include flex(flex, start, center);
     flex-direction: column;
+    & textarea.products-modal-form__field {
+        margin-bottom: 32px;
+        resize: none
+    }
 }
 .products-modal-form__field{
     width: 368px;
@@ -109,10 +113,7 @@
     &:not(:last-child) {
         margin-bottom: 16px;
     }
-    &:nth-child(3) {
-        margin-bottom: 32px;
-        resize:none
-    }
+
     &::placeholder{
         color: getColor('secondary-text');
     }

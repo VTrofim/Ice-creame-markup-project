@@ -1,13 +1,23 @@
 .section-poster{
-    padding-top: 86px;
-    background: linear-gradient(to bottom,getColor('main-bgc') 0px getColor('main-bgc') 94px, getColor('card-bgc') 94px,getColor('card-bgc'));
+    position: relative;
+    padding-top: 180px;
+    background: linear-gradient(to bottom,getColor('main-bgc') 0px, getColor('main-bgc') 94px, transparent 94px,transparent);
+    
+    & .container{
+        position: absolute;
+        top:94px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
 }
 .poster-section__picture{
     margin: 0 auto;
     border-radius:24px;
+    overflow: hidden
 }
 .swiper-wrapper{
-    overflow: hidden;
+    // overflow: hidden;
     // justify-content: center;
 }
 .poster-section__picture{
@@ -21,6 +31,7 @@
     margin: 0 auto;
 }
 .swiper-slide img{
+    width: 100%;
     object-fit: cover;
 }
 
